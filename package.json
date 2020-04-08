@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/molebox/uma-and-hollie-cook.git",
-  "author": "HAINES-DESKTOP\\richa <richardkhaines@hotmail.co.uk>",
+  "author": "Richard Haines",
   "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "pretty-check": "prettier --check \"src/**/*.{js}\"",
+    "pretty": "prettier --write \"src/**/*js\"",
+    "sitemap": "gatsby build && gatsby serve"
+  },
   "dependencies": {
     "gatsby": "^2.20.13",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -15,6 +23,11 @@
     "gatsby-theme-seo": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-loadable": "^5.5.0",
+    "react-particles-js": "^3.0.3",
     "theme-ui": "^0.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4"
   }
 }
