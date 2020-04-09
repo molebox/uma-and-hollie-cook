@@ -1,3 +1,4 @@
+// https://coolors.co/007353-e9d758-fb9f89-e8794b-4591af
 export default {
   fonts: {
     heading: "Comic Neue",

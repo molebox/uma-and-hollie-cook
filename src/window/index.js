@@ -11,7 +11,7 @@ export const TabletTemplateAreas = `
 `;
 
 export const DesktopTemplateAreas = `
-  'nav    nav      nav     nav     nav     nav     nav    nav'
-  'main    main     main    main    main    main    main   main'
-  'footer    footer   footer  footer  footer  footer  footer footer'
+  '.    nav      nav     nav     nav     nav     nav    nav     nav    .'
+  'main    main     main    main    main    main    main   main    main   main'
+  'footer    footer   footer  footer  footer  footer  footer footer  footer footer'
 `;

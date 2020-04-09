@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
           gridTemplateColumns: [
             "repeat(4, 1fr)",
             "repeat(6, 1fr)",
-            "10vw repeat(6, 1fr) 10vw",
+            "repeat(10, 1fr)",
           ],
           gridTemplateAreas: [
             PhoneTemplateAreas,

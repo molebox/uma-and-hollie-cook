@@ -23,7 +23,6 @@
     "gatsby-theme-seo": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-loadable": "^5.5.0",
     "react-particles-js": "^3.0.3",
     "theme-ui": "^0.3.1"
   },
