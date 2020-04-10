@@ -7,7 +7,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
     sx={{
       width: "100%",
       height: "100%",
-      maxHeight: "840px",
+      maxHeight: "900px",
       maxWidth: "1200px",
       overflow: "hidden",
       // position: 'absolute',
@@ -21,7 +21,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
         minWidth: "100%",
         height: "auto",
         minHeight: "100%",
-        paddingTop: "56.25%",
+        paddingTop: "60.25%",
       }}
     >
       <iframe

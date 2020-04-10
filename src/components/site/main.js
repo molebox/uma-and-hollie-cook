@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import Background from "../../assets/background-ingrediants.svg";
+import Background from "../../assets/ingredients.svg";
 
 const Main = (props) => (
   <main
     sx={{
       gridArea: "main",
       minHeight: "calc(100vh - 20px)",
-      // paddingTop: "1.5em",
     }}
   >
     <Background

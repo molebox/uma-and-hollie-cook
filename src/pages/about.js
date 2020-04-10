@@ -1,12 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import Main from "./../components/site/main";
-import Test from "../assets/background.svg";
 
-const About = () => (
-  <Main>
-    <Test />
-  </Main>
-);
+const About = () => <Main>About page</Main>;
 
 export default About;

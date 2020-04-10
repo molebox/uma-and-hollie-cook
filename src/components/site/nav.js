@@ -20,7 +20,7 @@ const Nav = () => {
         sx={{
           textDecoration: "none",
           fontFamily: "heading",
-          fontSize: ["0.8em", "0.9em", "1.2em"],
+          fontSize: ["0.8em", "0.9em", "1.6em"],
           fontWeight: "bold",
           color: "text",
           paddingTop: ["1em", null, null],

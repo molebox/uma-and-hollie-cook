@@ -3,7 +3,6 @@ import { jsx } from "theme-ui";
 import Main from "./../components/site/main";
 import Video from "../components/video";
 import Wave from "../components/common/wave";
-// import Background from '../assets/background-ingrediants.svg';
 import Latest from "../components/recipes/latest";
 
 export default () => (
@@ -13,13 +12,9 @@ export default () => (
         margin: "2em",
         display: "flex",
         justifyContent: "center",
+        minHeight: "200px",
       }}
     >
-      {/* <Background 
-      sx={{
-        zIndex: -100,
-        position: 'absolute'
-      }}/> */}
       <Video
         videoSrcURL="https://www.youtube.com/embed/9A6iuWI_S88"
         videoTitle="Cute Rabbits"

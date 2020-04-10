@@ -1,40 +1,38 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
+import Recipe from "./recipe";
+import Method from "./method";
 
 const Latest = () => (
   <section
     sx={{
-      gridArea: "latest",
       display: "flex",
       flexDirection: "column",
-      justifyContent: "start",
-      alignItems: "start",
-      fontFamily: "heading",
-      border: "solid 2px",
-      borderColor: "background",
-      borderRadius: "20px",
-      padding: "2em",
-      width: "20vw",
-      background: "#fff",
     }}
   >
-    <h2>Senaste Receptet</h2>
-    <h3
+    <h2
       sx={{
-        margin: "1em 0 1em 0",
+        fontFamily: "heading",
+        fontSize: ["1em", "1.2em", "2em"],
+        textAlign: "center",
+        marginBottom: "2em",
       }}
     >
       Chokladbollar
-    </h3>
-    <ul>
-      <li>100g smör</li>
-      <li>1 dl socker</li>
-      <li>1 msk vaniljsocker</li>
-      <li>3 msk kakao</li>
-      <li>3 dl havregryn</li>
-      <li>3 msk kallt starkt kaffe</li>
-      <li>pärlsocker eller annan garnering</li>
-    </ul>
+    </h2>
+    <section
+      sx={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(auto, 600px))",
+        placeContent: "center",
+        gridAutoRows: "auto",
+        // width: '100%',
+        gap: "2em",
+      }}
+    >
+      <Recipe />
+      <Method />
+    </section>
   </section>
 );
 
