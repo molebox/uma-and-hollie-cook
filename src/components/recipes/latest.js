@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui";
 
 const Latest = () => (
-  <main
+  <section
     sx={{
       gridArea: "latest",
       display: "flex",
@@ -10,7 +10,12 @@ const Latest = () => (
       justifyContent: "start",
       alignItems: "start",
       fontFamily: "heading",
-      margin: "5em auto",
+      border: "solid 2px",
+      borderColor: "background",
+      borderRadius: "20px",
+      padding: "2em",
+      width: "20vw",
+      background: "#fff",
     }}
   >
     <h2>Senaste Receptet</h2>
@@ -30,7 +35,7 @@ const Latest = () => (
       <li>3 msk kallt starkt kaffe</li>
       <li>pärlsocker eller annan garnering</li>
     </ul>
-  </main>
+  </section>
 );
 
 export default Latest;
