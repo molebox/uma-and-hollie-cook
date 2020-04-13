@@ -1,18 +1,21 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import Background from "../../assets/ingredients.svg";
+import Background from "../../assets/background-yellow.svg";
 
 const Main = (props) => (
   <main
     sx={{
       gridArea: "main",
-      minHeight: "calc(100vh - 20px)",
+      minHeight: "100%",
+      height: "fit-content",
+      // minHeight: "calc(100vh - 20px)",
     }}
   >
     <Background
       sx={{
-        zIndex: -100,
+        zIndex: -999999,
         position: "absolute",
+        opacity: "0.8",
       }}
     />
     {props.children}

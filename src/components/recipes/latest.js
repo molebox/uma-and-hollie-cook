@@ -15,7 +15,14 @@ const Latest = () => (
         fontFamily: "heading",
         fontSize: ["1em", "1.2em", "2em"],
         textAlign: "center",
-        marginBottom: "2em",
+        marginBottom: "3em",
+        ":before": {
+          content: "''",
+          borderBottom: "solid 2px",
+          borderColor: "text",
+          paddingTop: "1em",
+          width: "50px",
+        },
       }}
     >
       Chokladbollar

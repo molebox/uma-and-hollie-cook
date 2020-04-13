@@ -20,7 +20,7 @@ const Wave = ({ children }) => {
       <section
         sx={{
           backgroundColor: "secondary",
-          minHeight: "500px",
+          minHeight: "300px",
           marginTop: "-5px",
           padding: "2em",
         }}

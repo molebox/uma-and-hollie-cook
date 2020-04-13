@@ -19,10 +19,11 @@ export default {
   },
   colors: {
     text: "#000",
+    white: "#fff",
     invert: "#fff",
     background: "#fff",
     // background: "#E9D758",
-    primary: "#006992",
+    primary: "#2E84A5",
     secondary: "#E9D758",
     accent: "",
     modes: {

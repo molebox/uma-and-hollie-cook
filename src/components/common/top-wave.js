@@ -5,9 +5,10 @@ const TopWave = ({ children }) => {
   return (
     <section
       sx={{
-        marginTop: "-30px",
-        zIndex: -1000,
-        marginBottom: "-500px",
+        marginTop: "-100px",
+        marginBottom: "-5px",
+        width: "100%",
+        zIndex: -1000000,
       }}
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -19,8 +20,7 @@ const TopWave = ({ children }) => {
       </svg>
       <section
         sx={{
-          height: "700px",
-          marginBottom: "500px",
+          height: "100px",
         }}
       >
         {children}

@@ -1,17 +1,20 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import React from "react";
+import TVBackground from "../assets/tv.svg";
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
   <div
     sx={{
       width: "100%",
       height: "100%",
-      maxHeight: "900px",
-      maxWidth: "1200px",
+      maxHeight: "700px",
+      maxWidth: "900px",
       overflow: "hidden",
-      // position: 'absolute',
+      position: "relative",
       borderRadius: "20px",
+      border: "solid 3px",
+      // zIndex: 1000
     }}
   >
     <div
@@ -22,6 +25,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
         height: "auto",
         minHeight: "100%",
         paddingTop: "60.25%",
+        zIndex: "99999",
       }}
     >
       <iframe
