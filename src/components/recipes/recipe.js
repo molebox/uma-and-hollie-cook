@@ -11,8 +11,8 @@ const Recipe = () => {
         justifyContent: "start",
         alignItems: "start",
         fontFamily: "heading",
+        borderColor: "text",
         border: "solid 2px",
-        borderColor: "background",
         borderRadius: "20px",
         padding: "2em",
         // width: "25vw",
@@ -24,7 +24,7 @@ const Recipe = () => {
           fontSize: ["1em", "1.2em", "1.5em"],
         }}
       >
-        Senaste Receptet
+        Receptet
       </h3>
       <ul>
         <LI>100g smör</LI>

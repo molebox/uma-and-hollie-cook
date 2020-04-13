@@ -13,16 +13,9 @@ const Latest = () => (
     <h2
       sx={{
         fontFamily: "heading",
-        fontSize: ["1em", "1.2em", "2em"],
+        fontSize: ["1em", "1.2em", "2.5em"],
         textAlign: "center",
-        marginBottom: "3em",
-        ":before": {
-          content: "''",
-          borderBottom: "solid 2px",
-          borderColor: "text",
-          paddingTop: "1em",
-          width: "50px",
-        },
+        marginBottom: "1.5em",
       }}
     >
       Chokladbollar

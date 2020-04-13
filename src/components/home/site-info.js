@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { motion } from "framer-motion";
-import LI from "../common/li";
 import ExternalLink from "./../common/external-link";
 
 const container = {
@@ -29,14 +28,13 @@ const SiteInfo = () => {
         display: "flex",
         flexDirection: "column",
         margin: "0 auto",
-        width: "70%",
+        width: ["90%", "80%", "70%"],
         background: "white",
         padding: "2em",
-        border: "solid 5px",
-        borderColor: "white",
+        border: "solid 2px",
+        borderColor: "text",
         borderRadius: "20px",
         fontFamily: "heading",
-        fontSize: ["0.8em", "0.9em", "1.2em"],
         fontWeight: "bold",
         color: "text",
         paddingTop: ["1em", null, null],

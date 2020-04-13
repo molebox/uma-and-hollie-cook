@@ -11,8 +11,8 @@ const Method = () => {
         justifyContent: "start",
         alignItems: "start",
         fontFamily: "heading",
+        borderColor: "text",
         border: "solid 2px",
-        borderColor: "background",
         borderRadius: "20px",
         padding: "2em",
         // width: "25vw",
@@ -27,11 +27,7 @@ const Method = () => {
       >
         Gör så här
       </h3>
-      <ul
-        sx={{
-          marginTop: "1em",
-        }}
-      >
+      <ul>
         <LI>Smält smöret och låt puttra en kort stund.</LI>
         <LI>
           Rör ihop socker, vaniljsocker, kakao, havregryn, kaffe och smöret.
