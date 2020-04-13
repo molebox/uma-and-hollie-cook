@@ -10,7 +10,7 @@ const SiteLinkBox = ({ section, Icon, description, btnText }) => {
       sx={{
         display: "grid",
         gridTemplateRows: "repeat(4, minmax(50px, 1fr))",
-        gap: "2em",
+        gap: ["1em", "1em", "2em"],
         background: "white",
         padding: "1em",
         placeItems: "center",
@@ -22,9 +22,7 @@ const SiteLinkBox = ({ section, Icon, description, btnText }) => {
     >
       <motion.div
         sx={{
-          width: "6em",
           height: "6em",
-          /// zIndex: 9000
         }}
       >
         {<Icon />}

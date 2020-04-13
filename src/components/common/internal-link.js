@@ -8,8 +8,8 @@ const InternalLink = ({ text, section }) => (
       textTransform: "uppercase",
       border: "solid 2px",
       borderColor: "text",
-      width: ["120px", "200px", "220px"],
-      height: "50px",
+      width: ["135px", "200px", "220px"],
+      height: "40px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
@@ -26,6 +26,7 @@ const InternalLink = ({ text, section }) => (
       },
       fontFamily: "heading",
       fontWeight: "bold",
+      fontSize: ["0.7em", "1em", "1em"],
       color: "text",
       textDecoration: "none",
     }}

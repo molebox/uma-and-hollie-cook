@@ -16,10 +16,8 @@ const Senast = () => {
           margin: "2em",
           display: "flex",
           flexDirection: "column",
-          // gridTemplateColumns: "repeat(auto-fit, minmax(auto, 800px))",
           justifyContent: "center",
           alignItems: "center",
-          // minHeight: "100px",
           position: "relative",
           gap: "2em",
           background: "white",
@@ -40,7 +38,7 @@ const Senast = () => {
             display: "flex",
             justifyContent: "space-evenly",
             alignItems: "center",
-            marginTop: [null, "1em", "2em"],
+            marginTop: ["1.5em", "1.5em", "2em"],
             width: "100%",
           }}
         >
