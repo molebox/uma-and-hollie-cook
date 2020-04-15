@@ -9,8 +9,8 @@ const SiteLinkBox = ({ section, Icon, description, btnText }) => {
     <motion.section
       sx={{
         display: "grid",
-        gridTemplateRows: "repeat(4, minmax(50px, 1fr))",
-        gap: ["1em", "1em", "2em"],
+        gridTemplateRows: [null, "repeat(4, minmax(50px, 1fr))"],
+        gap: ["2em", "1em", "2em"],
         background: "white",
         padding: "1em",
         placeItems: "center",

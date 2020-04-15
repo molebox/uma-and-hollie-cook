@@ -1,21 +1,15 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { duration } from "./index";
+import { Link } from "gatsby";
+import GatsbyImage from "gatsby-image";
+import itemStyles from "./vlog.module.css";
 
-const Item = ({ children }) => {
+const Item = ({ fluidSrc, imageAlt, vlogSlug }) => {
   return (
-    <div
-      sx={{
-        padding: "0 2px",
-        transition: `${duration} all`,
-        ":hover": {
-          margin: "0 40px",
-          transform: "scale(1.2)",
-        },
-      }}
-    >
-      {children}
-    </div>
+    <Link className={itemStyles.item} to={vlogSlug}>
+      <img src={fluidSrc} alt={imageAlt} />
+      {/* <GatsbyImage fluid={fluidSrc} alt={imageAlt}/> */}
+    </Link>
   );
 };
 
