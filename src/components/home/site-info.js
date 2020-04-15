@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui";
 import { motion } from "framer-motion";
 import ExternalLink from "./../common/external-link";
+import { useInView } from "react-intersection-observer";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -19,11 +20,20 @@ const container = {
 const heart = `💖`;
 
 const SiteInfo = () => {
+  const [ref, inView, entry] = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
   return (
     <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
+      ref={ref}
+      initial={{ scale: 0 }}
+      animate={{ scale: inView ? 1 : 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -37,7 +47,7 @@ const SiteInfo = () => {
         fontFamily: "heading",
         fontWeight: "bold",
         color: "text",
-        paddingTop: ["1em", null, null],
+        paddingTop: "1em",
         letterSpacing: "text",
       }}
     >

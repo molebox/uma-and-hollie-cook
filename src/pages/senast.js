@@ -13,7 +13,6 @@ const Senast = () => {
       <Header title="Senast recept" />
       <section
         sx={{
-          margin: "2em",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -21,14 +20,24 @@ const Senast = () => {
           position: "relative",
           gap: "2em",
           background: "white",
-          maxWidth: "1000px",
-          padding: "2.5em",
+          maxWidth: "800px",
+          padding: "1em",
           borderRadius: "20px",
           borderColor: "text",
           border: "solid 2px",
           margin: "0 auto",
         }}
       >
+        <h2
+          sx={{
+            fontFamily: "heading",
+            fontSize: ["1em", "2em", "2.5em"],
+            margin: ".5em auto",
+            textAlign: "center",
+          }}
+        >
+          Chokladbollar
+        </h2>
         <Video
           videoSrcURL="https://www.youtube.com/embed/9A6iuWI_S88"
           videoTitle="Cute Rabbits"

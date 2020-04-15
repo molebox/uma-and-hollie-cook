@@ -43,6 +43,7 @@ const Layout = ({ children }) => {
             TabletTemplateAreas,
             DesktopTemplateAreas,
           ],
+          background: "secondary",
         }}
       >
         {children}

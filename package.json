@@ -11,7 +11,8 @@
     "clean": "gatsby clean",
     "pretty-check": "prettier --check \"src/**/*.{js}\"",
     "pretty": "prettier --write \"src/**/*js\"",
-    "sitemap": "gatsby build && gatsby serve"
+    "sitemap": "gatsby build && gatsby serve",
+    "z": "gatsby clean && gatsby develop"
   },
   "dependencies": {
     "framer-motion": "^1.10.3",
@@ -27,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.26.1",
     "react-particles-js": "^3.0.3",
     "theme-ui": "^0.3.1"
   },

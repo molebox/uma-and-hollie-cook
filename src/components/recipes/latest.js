@@ -10,24 +10,15 @@ const Latest = () => (
       flexDirection: "column",
     }}
   >
-    <h2
-      sx={{
-        fontFamily: "heading",
-        fontSize: ["1em", "1.2em", "2.5em"],
-        textAlign: "center",
-        marginBottom: "1.5em",
-      }}
-    >
-      Chokladbollar
-    </h2>
     <section
       sx={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(auto, 600px))",
+        gridTemplateColumns: [null, "repeat(auto-fit, minmax(auto, 600px))"],
         placeContent: "center",
         gridAutoRows: "auto",
-        // width: '100%',
         gap: "2em",
+        width: ["80%", "100%", "100%"],
+        margin: "0 auto",
       }}
     >
       <Recipe />

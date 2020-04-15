@@ -19,7 +19,7 @@ const InternalLink = ({ text, section }) => (
       border: "solid 2px",
       borderColor: "text",
       ":hover": {
-        boxShadow: "-5px 4px 2px 0px hsla(0, 0%, 3.9%, 0.99)",
+        boxShadow: "-3px 3px 0px 0px hsla(0, 0%, 3.9%, 0.99)",
       },
       ":active": {
         boxShadow: "none",

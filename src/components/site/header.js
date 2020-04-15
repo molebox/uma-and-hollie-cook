@@ -13,7 +13,7 @@ const Header = ({ title }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: ["150px", "270px"],
+        height: ["150px", "250px"],
         margin: "0 1em",
       }}
     >

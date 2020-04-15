@@ -21,20 +21,11 @@ export default {
     text: "#000",
     white: "#fff",
     invert: "#fff",
-    background: "#fff",
-    // background: "#E9D758",
+    // background: "#fff",
+    background: "#E9D758",
     primary: "#2E84A5",
     secondary: "#E9D758",
     accent: "",
-    modes: {
-      dark: {
-        text: "",
-        background: "",
-        primary: "",
-        secondary: "",
-        accent: "",
-      },
-    },
   },
   breakpoints: ["40em", "56em", "64em"],
 };

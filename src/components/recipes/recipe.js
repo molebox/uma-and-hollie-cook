@@ -1,10 +1,20 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
+import React from "react";
 import LI from "./../common/li";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Recipe = () => {
+  const [ref, inView, entry] = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
   return (
-    <article
+    <motion.article
+      ref={ref}
+      animate={{ x: inView ? 0 : "-100%" }}
+      transition={{ delay: 0.2 }}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -35,7 +45,7 @@ const Recipe = () => {
         <LI>3 msk kallt starkt kaffe</LI>
         <LI>pärlsocker eller annan garnering</LI>
       </ul>
-    </article>
+    </motion.article>
   );
 };
 

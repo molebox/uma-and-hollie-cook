@@ -13,7 +13,7 @@ const H1 = ({ children }) => (
     }}
     sx={{
       fontFamily: "heading",
-      fontSize: ["1.3em", "2.5em", "4em"],
+      fontSize: ["1.3em", "2.5em", "3em"],
       fontWeight: "bold",
       textTransform: "uppercase",
       letterSpacing: "text",

@@ -6,7 +6,7 @@ const LI = ({ children }) => (
     <p
       sx={{
         fontFamily: "heading",
-        fontSize: ["0.8em", "0.9em", "1.2em"],
+        fontSize: ["1em", "1.2em", "1.3em"],
         marginTop: "1em",
       }}
     >
