@@ -1,5 +1,8 @@
+let activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development" || "production"
+
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${activeEnv}`,
 })
 
 module.exports = {
@@ -8,13 +11,6 @@ module.exports = {
         siteUrl: 'https://umaholliecooks.netlify.com',
       },
     plugins: [
-        // {
-        //     resolve: 'gatsby-source-filesystem',
-        //     options: {
-        //       path: `${__dirname}/posts/`,
-        //       name: 'posts',
-        //     },
-        //   },
         {
             resolve: 'gatsby-plugin-google-fonts',
             options: {
@@ -50,6 +46,17 @@ module.exports = {
                     twitter: 'studio_hungry'
                 }
             }
+        },
+        {
+          resolve: 'gatsby-source-sanity',
+          options: {
+            projectId: 'mjxk8iyh',
+            dataset: 'recept',
+            watchMode: false
+            // a token with read permissions is required
+            // if you have a private dataset
+            // token: process.env.MY_SANITY_TOKEN
+          }
         },
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',

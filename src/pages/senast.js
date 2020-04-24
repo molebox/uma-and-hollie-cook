@@ -6,8 +6,13 @@ import Wave from "./../components/common/wave";
 import Latest from "./../components/recipes/latest";
 import Header from "./../components/site/header";
 import InternalLink from "./../components/common/internal-link";
+import { graphql } from "gatsby";
+import { useStaticQuery } from "gatsby";
 
 const Senast = () => {
+  const data = useStaticQuery(query);
+  const avsnitt = data.allSanityAvsnitt.edges[0].node;
+  console.log({ avsnitt });
   return (
     <Main>
       <Header title="Senast recept" />
@@ -36,12 +41,16 @@ const Senast = () => {
             textAlign: "center",
           }}
         >
-          Chokladbollar
+          {avsnitt.title}
         </h2>
         <Video
+          videoSrcURL={avsnitt.avsnittUrl.url}
+          videoTitle={avsnitt.title}
+        />
+        {/* <Video
           videoSrcURL="https://www.youtube.com/embed/9A6iuWI_S88"
           videoTitle="Cute Rabbits"
-        />
+        /> */}
         <section
           sx={{
             display: "flex",
@@ -64,3 +73,22 @@ const Senast = () => {
 };
 
 export default Senast;
+
+export const query = graphql`
+  query AvsnittQuery {
+    allSanityAvsnitt {
+      edges {
+        node {
+          avsnittUrl {
+            _key
+            _type
+            url
+          }
+          id
+          title
+          releaseDate(formatString: "DD MM YYYY")
+        }
+      }
+    }
+  }
+`;
